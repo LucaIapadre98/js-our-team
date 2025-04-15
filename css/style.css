@@ -1,5 +1,19 @@
 .container-card {
     display: flex;
+    padding-top: 50px; 
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-wrap: wrap;
     justify-content: space-around;
-    
+   
+}
+.container-card .team-card{
+ display: flex;
+ padding: 10px;
+}
+ .team-card .text-card h3, h5, span{
+    margin: 15px;
+}
+.team-card img{
+    height: 150px;
 }

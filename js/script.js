@@ -43,16 +43,17 @@ const teamMembers = [
 let cardHTML = ``;
 for(const member of teamMembers){
   cardHTML +=`
-      <div class="team-card">
+   <div class="team-card">
             <div class="image-card">
-                <img src="./${member.img}" alt="${member.email}">
+                <img src="./${member.img}" alt="">
             </div>
-            <div class="text-card">
-                <h3>Marco</h3>
-                <h5>Designer</h5>
+            <div class="text-card bg-dark text-white">
+                <h3>${member.name}</h3>
+                <h5>${member.role}</h5>
+                <span class="text-primary">${member.email}</span>
             </div>
-      </div> 
+        </div>
   `
 }
 
-// containerTeam.innerHTML= cardHTML;
+containerTeam.innerHTML= cardHTML;
