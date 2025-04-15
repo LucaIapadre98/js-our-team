@@ -1,19 +1,39 @@
 .container-card {
     display: flex;
     padding-top: 50px; 
+    flex-wrap: wrap;
     padding-left: 100px;
     padding-right: 100px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-   
+    justify-content: space-between;
 }
+
 .container-card .team-card{
  display: flex;
- padding: 10px;
+ flex-wrap: wrap;
+ padding: 15px;
 }
- .team-card .text-card h3, h5, span{
-    margin: 15px;
+
+ .team-card .text-card h3{
+  margin-left: 5px;
+  margin-right: 50px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
 }
+.team-card .text-card h5{
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+.team-card .text-card span{
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
 .team-card img{
     height: 150px;
 }

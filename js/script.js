@@ -43,7 +43,7 @@ const teamMembers = [
 let cardHTML = ``;
 for(const member of teamMembers){
   cardHTML +=`
-   <div class="team-card">
+        <div class="team-card">
             <div class="image-card">
                 <img src="./${member.img}" alt="">
             </div>
