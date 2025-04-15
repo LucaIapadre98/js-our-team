@@ -1,3 +1,6 @@
+const containerTeam = document.querySelector(".container-card");
+
+
 const teamMembers = [
   {
     name: "Marco Bianchi",
@@ -36,3 +39,20 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+let cardHTML = ``;
+for(const member of teamMembers){
+  cardHTML +=`
+      <div class="team-card">
+            <div class="image-card">
+                <img src="./${member.img}" alt="${member.email}">
+            </div>
+            <div class="text-card">
+                <h3>Marco</h3>
+                <h5>Designer</h5>
+            </div>
+      </div> 
+  `
+}
+
+// containerTeam.innerHTML= cardHTML;
